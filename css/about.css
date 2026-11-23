@@ -1,0 +1,37 @@
+
+.about-content {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.about-content h2 {
+    color: rgb(32, 32, 60);
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.about-content p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.social-icons a {
+    color: rgb(32, 32, 60);
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007BFF;
+}

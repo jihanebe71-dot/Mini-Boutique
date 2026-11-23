@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="css/khedma.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #ddd;
+            margin: 0;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #20203c;
+        }
+
+        #cart-items {
+            max-width: 800px;
+            margin: 30px auto;
+        }
+
+        .cart-item {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .remove-btn {
+            background: #c0392b;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #total {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .back {
+            display: block;
+            text-align: center;
+            margin-top: 25px;
+            color: #20203c;
+        }
+    </style>
+</head>
+<body>
+<h1>My Shopping Cart</h1>
+
+<div id="cart-items"></div>
+
+<p id="total">Total: 0 MAD</p>
+
+<div class="cart-actions">
+    <button id="clear-cart">Clear Cart</button>
+    <a href="checkout.html" id="checkout-btn">Checkout</a>
+</div>
+
+<a href="khedma.html" class="back">Continue Shopping</a>
+
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-section">
+            <h2>TIMELESS WATCHES</h2>
+            <p>Discover elegance, style and timeless watches.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="khedma.html">Shop</a>
+            <a href="new.html">New Arrivals</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Timeless Watches. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+<script src="js/cart.js"></script>
+<script src="js/cart-counter.js"></script>
+</body>
+</html>

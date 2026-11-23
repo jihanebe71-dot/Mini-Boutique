@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #ddd;
+            padding: 30px;
+        }
+
+        .checkout {
+            background: white;
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #20203c;
+            text-align: center;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #20203c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+        button:hover {
+            background: #007BFF;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="checkout">
+    <h1>Checkout</h1>
+
+    <form id="order-form">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <textarea placeholder="Delivery Address" required></textarea>
+
+        <h3 id="order-total">Total: 0 MAD</h3>
+
+        <button type="submit">Confirm Order</button>
+    </form>
+</div>
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-section">
+            <h2>TIMELESS WATCHES</h2>
+            <p>Discover elegance, style and timeless watches.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="khedma.html">Shop</a>
+            <a href="new.html">New Arrivals</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Timeless Watches. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+<script>
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    const total = cart.reduce(
+        (sum, product) => sum + product.price * product.quantity, 0
+    );
+
+    document.getElementById("order-total").textContent =
+        `Total: ${total.toFixed(2)} MAD`;
+
+    const form = document.getElementById("order-form");
+
+    if (cart.length === 0) {
+        form.innerHTML = "<h2>Your cart is empty!</h2><a href='khedma.html'>Continue Shopping</a>";
+    }
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        alert("Your order has been confirmed!");
+
+        localStorage.removeItem("cart");
+
+        window.location.href = "khedma.html";
+    });
+</script>
+<script src="js/cart-counter.js"></script>
+</body>
+</html>

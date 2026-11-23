@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact - Timeless Watches</title>
+
+    <link rel="stylesheet" href="css/khedma.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+
+<header class="header-container">
+
+    <h1>TIMELESS WATCHES</h1>
+
+    <input type="search" placeholder="Search...">
+    <i class="fa-solid fa-magnifying-glass"></i>
+
+    <nav>
+        <ul>
+            <li><a href="khedma.html">Shop</a></li>
+            <li><a href="new.html">New Arrivals</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <a href="cart.html" class="cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-count">0</span>
+    </a>
+
+</header>
+
+    <main class="contact-container">
+
+        <h2>Contact Us</h2>
+
+        <p>Have a question or need help? Feel free to contact us.</p>
+
+        <form class="contact-form">
+
+            <input type="text" placeholder="Your Name" required>
+
+            <input type="email" placeholder="Your Email" required>
+
+            <input type="text" placeholder="Subject" required>
+
+            <textarea placeholder="Your Message" rows="6" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+        <h2>Follow Us</h2>
+
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="mailto:example@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+
+    </main>
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-section">
+            <h2>TIMELESS WATCHES</h2>
+            <p>Discover elegance, style and timeless watches.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="khedma.html">Shop</a>
+            <a href="new.html">New Arrivals</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Timeless Watches. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+    <script>
+        document.querySelector(".contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Thank you! Your message has been received.");
+            this.reset();
+        });
+    </script>
+<script src="js/cart-counter.js"></script>
+</body>
+</html>
