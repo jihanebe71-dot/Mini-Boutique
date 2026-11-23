@@ -47,6 +47,28 @@ Mini-Boutique/
 └── new.html
 ```
 
+
+## 📸 Screenshots
+
+### Home Page
+![Home Page](screenshots/home.png)
+
+### Product Details
+![Product Details](screenshots/product-details.png)
+
+### Shopping Cart
+![Shopping Cart](screenshots/cart.png)
+
+### About
+![About](screenshots/about.png)
+
+### Contact
+![Contact](screenshots/contact.png)
+
+### New Arrivals
+![New Arrivals](screenshots/new-arrivals.png)
+
+
 ## 🚀 Getting Started
 
 1. Clone the repository:
